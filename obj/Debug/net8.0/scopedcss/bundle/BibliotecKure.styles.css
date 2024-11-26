@@ -1,0 +1,897 @@
+/* _content/BibliotecKure/Views/Livros/Cadastro.cshtml.rz.scp.css */
+form[b-qq2pu9ov4l] {
+    width: 90%;
+  }
+  
+  /* .form-linha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 0;
+  } */
+  
+  .form-linha[b-qq2pu9ov4l] {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    
+  }
+  
+  .form-upload[b-qq2pu9ov4l] {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+  }
+  
+  .form-input-upload[b-qq2pu9ov4l] {
+    height: 40px;
+    background: #FFF;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    display: flex;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .form-input-checkbox[b-qq2pu9ov4l] {
+    border-radius: 10px;
+    accent-color: #2fd6cb;
+  }
+  
+  
+  /* --------------------------------------------------- */
+  
+  /* Estilo do container do checkbox */
+  .checkbox-container[b-qq2pu9ov4l] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Esconder o checkbox padrão */
+  .checkbox-container input[type="checkbox"][b-qq2pu9ov4l] {
+    display: none;
+  }
+  
+  /* Estilo do checkbox customizado */
+  .custom-checkbox[b-qq2pu9ov4l] {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Estilo do ícone quando o checkbox está ativo */
+  .checkbox-container input[type="checkbox"]:checked+.custom-checkbox[b-qq2pu9ov4l] {
+    background-color: #2fd6cb;
+    /* Cor verde para indicar "ativo" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ícone de verificação */
+  .custom-checkbox[b-qq2pu9ov4l]::before {
+    content: '✓';
+    color: white;
+    font-size: 18px;
+    display: none;
+  }
+  
+  /* Mostrar o ícone de verificação apenas quando o checkbox está ativo */
+  .checkbox-container input[type="checkbox"]:checked+.custom-checkbox[b-qq2pu9ov4l]::before {
+    display: block;
+  }
+  
+  /* --------------------------------------------------- */
+
+  .form-group-name[b-qq2pu9ov4l]{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group[b-qq2pu9ov4l] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-label[b-qq2pu9ov4l] {
+    font-weight: 500;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  ul[b-qq2pu9ov4l]{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* height: 100%; */
+    list-style-type: none;
+  }
+
+  li[b-qq2pu9ov4l]{
+    list-style-type: none;
+    width: 270px;
+  }
+
+  .form-label-categoria[b-qq2pu9ov4l]{
+    font-weight:normal;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+  }
+  
+  label[b-qq2pu9ov4l] {
+    font-weight: bold;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+  }
+  
+  .form-input[b-qq2pu9ov4l] {
+    height: 40px;
+    background: #FFF;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    padding: 0 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: "Montserrat", sans-serif;
+  
+    font-size: 15px;
+  }
+  
+  .form-descricao[b-qq2pu9ov4l] {
+    height: 200px;
+    padding: 15px 15px;
+  }
+  
+  .input-foto[b-qq2pu9ov4l] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #FFF;
+    color: var(--dark-blue);
+    border-radius: 10px;
+    border: none;
+    padding: 0 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+    width: 100%;
+  
+  }
+  
+  
+  .input-foto i[b-qq2pu9ov4l] {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  
+  #foto[b-qq2pu9ov4l] {
+    display: none;
+    /* display: none;
+    width: 30px;
+    height: 30px; */
+  }
+  
+  .form-checkbox input[b-qq2pu9ov4l] {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  #ativo[b-qq2pu9ov4l] {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #categoria[b-qq2pu9ov4l] {
+    cursor: pointer;
+  }
+  
+  .btn-div[b-qq2pu9ov4l] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-cadastrar[b-qq2pu9ov4l] {
+    width: 50%;
+    height: 50px;
+    background: #FFF;
+    color: black;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    border: 2px solid #2fd6cb;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .btn-cadastrar:hover[b-qq2pu9ov4l] {
+    background: #2fd6cb;
+    color: #FFF;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .form-linha[b-qq2pu9ov4l] {
+      flex-wrap: wrap;
+    }
+
+    .form-upload[b-qq2pu9ov4l]{
+      width: 100%;
+    }
+    
+  }
+/* _content/BibliotecKure/Views/Livros/Detalhes.cshtml.rz.scp.css */
+/******************* EFEITO DE MINIMIZAR - main *******************/
+.main-min[b-23zurpxaxg] {
+    width: calc(100% - 100px);
+  }
+  
+  @media screen and (max-width: 991px) {}
+  
+  .box-conteudo[b-23zurpxaxg] {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  
+  /*  aaaaa */
+  .tituloLivro[b-23zurpxaxg] {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin: 25px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .conteudoLivro[b-23zurpxaxg] {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* img.imagemLivro {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */
+  
+  #imagemLivro[b-23zurpxaxg] {
+    width: 100px;
+  }
+  
+  img[b-23zurpxaxg]{
+    width: 100px;
+  }
+  
+  .descricaoLivro[b-23zurpxaxg] {
+    width: calc(100% - 50%);
+    /* Ajuste de largura conforme solicitado */
+    text-align: left;
+  
+  }
+  
+  .descricaoLivro h3[b-23zurpxaxg] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .descricaoLivro p[b-23zurpxaxg] {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+  
+  }
+  
+  .botoesAcoes[b-23zurpxaxg] {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .botao[b-23zurpxaxg] {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao.reservar[b-23zurpxaxg] , .editar[b-23zurpxaxg]{
+    width: 400px;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .coracao[b-23zurpxaxg] {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+  
+  .detalhesLivro[b-23zurpxaxg] {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 14px;
+    color: #333;
+    margin: 20px 0px 10px 0px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .detalhesLivro p[b-23zurpxaxg] {
+    text-align: left;
+    margin-left: 5px;
+    width: 70%;
+  }
+  
+  .linha[b-23zurpxaxg]{
+    background-color: #2fd6cb;
+    width: 930px;
+    height: 3px;
+    align-items: center;
+  }
+  
+  strong[b-23zurpxaxg]{
+    margin-right: 10px;
+  }
+/* _content/BibliotecKure/Views/Livros/Editar.cshtml.rz.scp.css */
+form[b-v2z09kzv8n] {
+    width: 90%;
+  }
+  
+  /* .form-linha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 0;
+  } */
+  
+  .form-linha[b-v2z09kzv8n] {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    
+  }
+  
+  .form-upload[b-v2z09kzv8n] {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+  }
+  
+  .form-input-upload[b-v2z09kzv8n] {
+    height: 40px;
+    background: #FFF;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    display: flex;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .form-input-checkbox[b-v2z09kzv8n] {
+    border-radius: 10px;
+    accent-color: #2fd6cb;
+  }
+  
+  
+  /* --------------------------------------------------- */
+  
+  /* Estilo do container do checkbox */
+  .checkbox-container[b-v2z09kzv8n] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Esconder o checkbox padrão */
+  .checkbox-container input[type="checkbox"][b-v2z09kzv8n] {
+    display: none;
+  }
+  
+  /* Estilo do checkbox customizado */
+  .custom-checkbox[b-v2z09kzv8n] {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Estilo do ícone quando o checkbox está ativo */
+  .checkbox-container input[type="checkbox"]:checked+.custom-checkbox[b-v2z09kzv8n] {
+    background-color: #2fd6cb;
+    /* Cor verde para indicar "ativo" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ícone de verificação */
+  .custom-checkbox[b-v2z09kzv8n]::before {
+    content: '✓';
+    color: white;
+    font-size: 18px;
+    display: none;
+  }
+  
+  /* Mostrar o ícone de verificação apenas quando o checkbox está ativo */
+  .checkbox-container input[type="checkbox"]:checked+.custom-checkbox[b-v2z09kzv8n]::before {
+    display: block;
+  }
+  
+  /* --------------------------------------------------- */
+
+  .form-group-name[b-v2z09kzv8n]{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group[b-v2z09kzv8n] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-label[b-v2z09kzv8n] {
+    font-weight: 500;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  ul[b-v2z09kzv8n]{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* height: 100%; */
+    list-style-type: none;
+  }
+
+  li[b-v2z09kzv8n]{
+    list-style-type: none;
+    width: 270px;
+  }
+
+  .form-label-categoria[b-v2z09kzv8n]{
+    font-weight:normal;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+  }
+  
+  label[b-v2z09kzv8n] {
+    font-weight: bold;
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+  }
+  
+  .form-input[b-v2z09kzv8n] {
+    height: 40px;
+    background: #FFF;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    padding: 0 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: "Montserrat", sans-serif;
+  
+    font-size: 15px;
+  }
+  
+  .form-descricao[b-v2z09kzv8n] {
+    height: 200px;
+    padding: 15px 15px;
+  }
+  
+  .input-foto[b-v2z09kzv8n] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #FFF;
+    color: var(--dark-blue);
+    border-radius: 10px;
+    border: none;
+    padding: 0 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+    width: 100%;
+  
+  }
+  
+  
+  .input-foto i[b-v2z09kzv8n] {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  
+  #foto[b-v2z09kzv8n] {
+    display: none;
+    /* display: none;
+    width: 30px;
+    height: 30px; */
+  }
+  
+  .form-checkbox input[b-v2z09kzv8n] {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  #ativo[b-v2z09kzv8n] {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #categoria[b-v2z09kzv8n] {
+    cursor: pointer;
+  }
+  
+  .btn-div[b-v2z09kzv8n] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-cadastrar[b-v2z09kzv8n] {
+    width: 50%;
+    height: 50px;
+    background: #FFF;
+    color: black;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    border: 2px solid #2fd6cb;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .btn-cadastrar:hover[b-v2z09kzv8n] {
+    background: #2fd6cb;
+    color: #FFF;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .form-linha[b-v2z09kzv8n] {
+      flex-wrap: wrap;
+    }
+
+    .form-upload[b-v2z09kzv8n]{
+      width: 100%;
+    }
+    
+  }
+/* _content/BibliotecKure/Views/Livros/Index.cshtml.rz.scp.css */
+.listar-livros[b-ntbpwyyneh]::-webkit-scrollbar-track {
+    height: 50%;
+    background: #000;
+  }
+  
+  .listar-livros>*[b-ntbpwyyneh] {
+    padding: 10px 5%;
+    width: 100%;
+  }
+  
+  
+  /******************* PESQUISA *******************/
+  .listar-livros .pesquisa[b-ntbpwyyneh] {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .listar-livros .box-input[b-ntbpwyyneh] {
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .listar-livros .pesquisa input[b-ntbpwyyneh] {
+    height: 40px;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    background-color: #fefefe;
+    width: 100%;
+  }
+  
+  .listar-livros .box-input a[b-ntbpwyyneh] {
+    position: absolute;
+    right: 10px;
+  }
+  
+  .listar-livros .box-input img[b-ntbpwyyneh] {
+    height: 25px;
+  }
+  
+  .listar-livros .pesquisa .botao-filtro[b-ntbpwyyneh] {
+    width: 44px;
+  }
+  
+  
+  /******************* TEBELA *******************/
+  .listar-livros table td[b-ntbpwyyneh] {
+    padding: 5px 0;
+    line-height: 1;
+  
+  }
+  
+  .listar-livros tbody input[b-ntbpwyyneh] {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .listar-livros tbody img[b-ntbpwyyneh] {
+    height: 30px;
+  }
+  
+  td.icon[b-ntbpwyyneh] {
+    text-align: center;
+  }
+  
+  
+  /******************* MEDIA *******************/
+  @media screen and (max-width: 1000px) {
+  
+    /******************* RESPONSIVIDADE TABELA *******************/
+    thead[b-ntbpwyyneh] {
+      display: none;
+    }
+  
+    tr[b-ntbpwyyneh]::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      margin: 10px 0;
+      display: block;
+  
+      background: rgb(238, 238, 238);
+      background: -moz-linear-gradient(128deg, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 25%, rgba(204, 204, 204, 1) 75%, rgba(238, 238, 238, 1) 100%);
+      background: -webkit-linear-gradient(128deg, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 25%, rgba(204, 204, 204, 1) 75%, rgba(238, 238, 238, 1) 100%);
+      background: linear-gradient(128deg, rgba(238, 238, 238, 1) 0%, rgba(204, 204, 204, 1) 25%, rgba(204, 204, 204, 1) 75%, rgba(238, 238, 238, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee", endColorstr="#eeeeee", GradientType=1);
+  
+      /* background: rgb(85, 168, 253);
+        background: -moz-linear-gradient(128deg, rgba(85, 168, 253, 1) 0%, rgba(0, 8, 82, 1) 25%, rgba(0, 8, 82, 1) 75%, rgba(85, 168, 253, 1) 100%);
+        background: -webkit-linear-gradient(128deg, rgba(85, 168, 253, 1) 0%, rgba(0, 8, 82, 1) 25%, rgba(0, 8, 82, 1) 75%, rgba(85, 168, 253, 1) 100%);
+        background: linear-gradient(128deg, rgba(85, 168, 253, 1) 0%, rgba(0, 8, 82, 1) 25%, rgba(0, 8, 82, 1) 75%, rgba(85, 168, 253, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#55a8fd", endColorstr="#55a8fd", GradientType=1); */
+    }
+  
+    td[b-ntbpwyyneh] {
+      display: flex;
+      /* place-items: center; */
+      align-items: center;
+      gap: 10px;
+      /* grid-template-columns: 20ch auto; */
+  
+      /* padding: 10px 15px; */
+      overflow-x: scroll;
+      white-space: nowrap;
+      min-width: 225px;
+      width: 100%;
+    }
+  
+    td[b-ntbpwyyneh]::before {
+      content: attr(data-cell) ": ";
+      text-align: start;
+      font-weight: 700;
+      text-transform: capitalize;
+      min-width: 90px;
+      width: 25%;
+    }
+  
+    .listar-livros tbody input[b-ntbpwyyneh] {
+      height: 20px;
+      width: 20px;
+    }
+  
+    .listar-livros tbody img[b-ntbpwyyneh] {
+      height: 25px;
+    }
+  
+  
+    /******************* CASO TEBELA VAZIA *******************/
+    .linha-mensagem td[b-ntbpwyyneh]::before {
+      content: '';
+    }
+  
+    .linha-mensagem td[b-ntbpwyyneh] {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .listar-livros h1[b-ntbpwyyneh] {
+      font-size: 22px;
+      padding: 0;
+    }
+  
+    .listar-livros .pesquisa[b-ntbpwyyneh] {
+      padding: 10px 0;
+      gap: 10px;
+    }
+  
+    .listar-livros table[b-ntbpwyyneh] {
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+/* _content/BibliotecKure/Views/Login/Index.cshtml.rz.scp.css */
+/** Fornmulário de Login **/
+.bk-login[b-4iulhwzftj] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100wh;
+  height: calc(100vh - 96px);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+
+.form-box[b-4iulhwzftj] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* 
+  align-items: flex-start;
+
+  width: 80vw;
+  height: 80vh;
+  padding: 20px;
+  max-width: 900px;
+  min-width: 320px;
+  max-height: 670px;
+  min-height: 400px;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 30px; */
+
+  width: 70%;
+  height: 70vh;
+  padding: 50px;
+  background-color: #ffffff90;
+  backdrop-filter: blur(10px);
+  border-radius: 35px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  -webkit-backdrop-filter: blur(10px);
+}
+.form-box h1[b-4iulhwzftj] {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.formulario .frm-label[b-4iulhwzftj] {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.formulario .frm-input[b-4iulhwzftj] {
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+
+.formulario .frm-input:first-of-type[b-4iulhwzftj] {
+  margin-bottom: 40px;
+}
+
+.formulario .esqueci-senha[b-4iulhwzftj] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  color: #26333D;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.formulario .btn-entrar[b-4iulhwzftj] {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #26333D;
+  border-radius: 10px;
+  transition: background-color .4s;
+  border: none;
+}
+
+.formulario .btn-entrar:hover[b-4iulhwzftj] {
+  background-color: #2fd6cb;
+  border: none;
+  color: black;
+
+}
+/* _content/BibliotecKure/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* _content/BibliotecKure/Views/Usuario/Index.cshtml.rz.scp.css */
+.conteudo_principal[b-hx0z3mv6tv] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+
+}
+
+
+.conteudo[b-hx0z3mv6tv] {
+  display: flex;
+  margin-top: 10px;
+}
+
+.conteudo p[b-hx0z3mv6tv] {
+  margin-left: 10px;
+}
+
+.linha[b-hx0z3mv6tv] {
+  background-color: #2fd6cb;
+  width: 50%;
+  height: 3px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
